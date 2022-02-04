@@ -1,1 +1,14 @@
 /* Write some CSS below */
+body{
+    font-family: Overpass;
+    font: size 18px;
+}
+
+h1, h2, h3 {
+    color: #404042;
+    font-family: Chivo;
+}
+
+.banner{
+    background-image: url('images/background.jpg');
+}
