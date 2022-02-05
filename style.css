@@ -1,14 +1,56 @@
 /* Write some CSS below */
-body{
+body {
     font-family: Overpass;
     font: size 18px;
+    margin: 0;
+    background-color: rgb(230, 230, 230);
 }
+
 
 h1, h2, h3 {
     color: #404042;
     font-family: Chivo;
 }
 
-.banner{
+.container {
+    width: 900px;
+    margin: 60px auto;
+}
+
+.banner {
     background-image: url('images/background.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 45px;
+}
+
+.banner p {
+    color: white;
+    font-size: 24px;
+    opacity: 0.7;
+    margin: 50px
+}
+
+.bnt-blue {
+    background-color: blue;
+    padding: 16px 48px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-blue:hover {
+    background-color: rgb(241, 15, 241);
+}
+
+.card-white {
+    background-color: white;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0, 3);
+    border-radius: 4px;
 }
