@@ -1,45 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
-  <title>Le Wagon - Web Development Sprint</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le Wagon — Web Development Sprint</title>
+  <meta name="description" content="Mude sua vida: aprenda a programar com a Le Wagon e construa projetos incríveis com open source.">
 
-  <!-- Change these Google fonts with your own choice -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Banner section -->
-  <div class="banner">
-    <h1>Change your life, learn to code</h1>
-    <h2>To better with open source</h2>
-    <p>Le wagon brings techincal skills to creative people</p>
-    <a href="https://www.lewagon.com/pt-BR" class="bnt-blue">Apply now</a>
-  </div>
-
-  <!-- Cards section -->
-  <div class="container">
-    <h2> Discover our campuses</h2>
-    <div class="card-white">
-      <img src="images/shanghai.jpg" alt="shanghai">
-      <h3>Shanghai</h3>
-      <p>Learn to code with us in Shanghai. </p>
+  <header class="banner">
+    <div class="container">
+      <h1>Mude sua vida, aprenda a programar</h1>
+      <p>Le Wagon leva habilidades técnicas a pessoas criativas</p>
+      <a href="https://www.lewagon.com/pt-BR" class="btn-blue">Inscreva-se</a>
     </div>
+  </header>
 
-    <div class="card-white">
-      <img src="images\london.jpg" alt="shanghai">
-      <h3>Shanghai</h3>
-      <p>Learn to code with us in London. </p>
-    </div>
+  <main>
+    <div class="container">
+      <h2>Descubra nossos campus</h2>
+      <div class="cards">
+        <div class="card-white">
+          <img src="images/shanghai.jpg" alt="Campus em Shanghai" loading="lazy">
+          <h3>Shanghai</h3>
+          <p>Aprenda a programar com a gente em Shanghai.</p>
+        </div>
 
-    <div class="card-white">
-      <img src="images/paris.jpg" alt="shanghai">
-      <h3>Shanghai</h3>
-      <p>Learn to code with us in Paris. </p>
+        <div class="card-white">
+          <img src="images/london.jpg" alt="Campus em Londres" loading="lazy">
+          <h3>London</h3>
+          <p>Aprenda a programar com a gente em Londres.</p>
+        </div>
 
+        <div class="card-white">
+          <img src="images/paris.jpg" alt="Campus em Paris" loading="lazy">
+          <h3>Paris</h3>
+          <p>Aprenda a programar com a gente em Paris.</p>
+        </div>
+
+        <div class="card-white">
+          <h3>Brasil</h3>
+          <p>Aprenda a programar com a gente no Brasil.</p>
+        </div>
+      </div>
     </div>
 
     <div class="card-white">
@@ -49,11 +60,12 @@
     </div>
   </div>
 
-  <!-- Footer section -->
-  <div class="footer">
+  <footer class="footer">
     <div class="container">
-      <p>Webesite made with at Le Wagon</p>
+      <p>Website feito com ❤️ na Le Wagon</p>
+      <a href="https://www.lewagon.com/pt-BR" class="btn-blue">Inscreva-se</a>
     </div>
+  </footer>
 </body>
 
 </html>
