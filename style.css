@@ -1,56 +1,129 @@
-/* Write some CSS below */
-body {
-    font-family: Overpass;
-    font: size 18px;
-    margin: 0;
-    background-color: rgb(230, 230, 230);
+/* Base */
+:root {
+  --color-text: #404042;
+  --color-bg: rgb(230, 230, 230);
+  --color-primary: #2563eb;
+  --color-primary-strong: #1d4ed8;
+  --radius: 8px;
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
 }
 
+body {
+  font-family: Overpass, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
 
 h1, h2, h3 {
-    color: #404042;
-    font-family: Chivo;
+  color: var(--color-text);
+  font-family: Chivo, Overpass, system-ui, -apple-system, "Segoe UI", sans-serif;
+  margin: 0 0 var(--space-3);
 }
 
 .container {
-    width: 900px;
-    margin: 60px auto;
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 0 var(--space-3);
 }
 
+/* Banner */
 .banner {
-    background-image: url('images/background.jpg');
-    background-size: cover;
-    padding: 100px 0;
-    text-align: center;
+  position: relative;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+.banner .container {
+  position: relative;
+  padding: 100px 0;
 }
 
 .banner h1 {
-    color: white;
-    font-size: 45px;
+  color: #fff;
+  font-size: clamp(28px, 4vw, 48px);
 }
 
 .banner p {
-    color: white;
-    font-size: 24px;
-    opacity: 0.7;
-    margin: 50px
+  color: #fff;
+  font-size: clamp(16px, 2.2vw, 22px);
+  opacity: 0.9;
+  margin: var(--space-4) 0 var(--space-4);
 }
 
-.bnt-blue {
-    background-color: blue;
-    padding: 16px 48px;
-    border-radius: 4px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+/* Button */
+.btn-blue {
+  background-color: var(--color-primary);
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  display: inline-block;
+  transition: background-color .2s ease, transform .1s ease;
 }
 
-.btn-blue:hover {
-    background-color: rgb(241, 15, 241);
+.btn-blue:hover,
+.btn-blue:focus {
+  background-color: var(--color-primary-strong);
+}
+
+.btn-blue:active {
+  transform: translateY(1px);
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .card-white {
-    background-color: white;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0, 3);
-    border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-radius: var(--radius);
+  overflow: hidden;
+  padding-bottom: var(--space-3);
+}
+
+.card-white img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-white h3 {
+  margin: var(--space-3) var(--space-3) var(--space-2);
+}
+
+.card-white p {
+  margin: 0 var(--space-3);
+}
+
+/* Footer */
+.footer {
+  background: #111827;
+  color: #e5e7eb;
+  padding: var(--space-5) 0;
+  text-align: center;
+}
+
+.footer a {
+  margin-top: var(--space-3);
 }
